@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  
+</head>
+<body>
+
+  <div class="navigation-zone">
+    <nav class="nav-left">
+        <img src="./images/logo.svg" alt="logo">
+        <div class="activeNav">
+            <p class="featuresMenu">Features</p>
+            <img src="./images/icon-arrow-down.svg" alt="ArrowDown">
+            <p class="companyMenu">Company</p>
+            <img src="./images/icon-arrow-down.svg" alt="ArrowDown">
+        </div>
+        <p>Careers</p>
+        <p>About</p>
+    </nav>
+    <nav class="nav-right">
+        <p>Login</p>
+        <p>Register</p>
+    </nav>
+    <div class="container inactive">
+      <div class="todo">
+          <img src="./images/icon-todo.svg" alt="icon-todo" class="icon-todo">
+          <p class="Todo">Todo list</p>
+      </div>
+      <div class="calendar">
+          <img src="./images/icon-calendar.svg" alt="icon-calendar" class="icon-calendar">
+          <p class="Calendar">Calendar</p>
+      </div>
+      <div class="reminders">
+          <img src="./images/icon-reminders.svg" alt="icon-reminders" class="icon-reminders">
+          <p class="Reminders">Reminders</p>
+      </div>
+      <div class="planning">
+          <img src="./images/icon-planning.svg" alt="icon-planning" class="icon-planning">
+          <p class="Planning">Planning</p>
+      </div>
+    </div>
+    <div class="company inactive">
+      <p class="history">History</p>
+      <p class="Our-team">Our Team</p>
+      <p class="blog">Blog</p>
+    </div>
+  </div>
+
+  <div class="ContainerPP">
+    <nav class="LeftContainer">
+        <span class="title">Make <br> Remote Work</span>
+        <p class="text">
+            Get your team in sync, no matter your location. <br>
+            Streamline processes, create team rituals, and  <br> watch productivity soar.
+        </p>
+        <button class="button">Learn More</button>
+        <div class="images">
+            <img src="./images/client-databiz.svg" alt="databiz" class="databiz">
+            <img src="./images/client-audiophile.svg" alt="audiophile" class="audiophile">
+            <img src="./images/client-meet.svg" alt="meet" class="meet">
+            <img src="./images/client-maker.svg" alt="maker" class="maker">
+        </div>
+    </nav>
+    <img src="./images/image-hero-desktop.png" alt="hero" class="hero">
+  </div>
+
+
+  <script src="./main.js"></script>
+</body>
+</html>

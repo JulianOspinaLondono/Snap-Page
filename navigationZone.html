@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+    <title>NavigationZone</title>
+    <style>
+        :root {
+            --Almost-White: hsl(0, 0%, 98%);
+            --Medium-Gray: hsl(0, 0%, 41%);
+            --Almost-Black: hsl(0, 0%, 8%);
+            --Font-size-paragraph: 18px;
+            --Font-Family: 'Epilogue', sans-serif;
+            --Font-Weight1: 500;
+            --Font-Weight2: 700;
+        }
+        body {
+            font-family: var(--Font-Family);
+            display: flex;
+            flex-direction: row;
+        }
+        .navigation-zone {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 60px;
+            align-items: center;
+            margin: 4px 20px 0 20px;
+            font-size: smaller;
+            color: var(--Medium-Gray);
+        }
+        .nav-left {
+            display: flex;
+        }
+        .nav-left > img {
+            height: 22px;
+            width: 64px;
+            align-self: center;
+            margin-right: 52px;
+        }
+        .nav-left > p {
+            margin-right: 16px;
+        }
+        .nav-left p:hover {
+            cursor: pointer;
+        }
+        .nav-left p:last-child:hover {
+            cursor: pointer;
+            color: var(--Almost-Black);
+        }
+        .activeNav {
+            display: flex;
+            justify-content: space-between;
+        }
+        .activeNav p {
+            margin-right: 6px;
+        }
+        .activeNav img {
+            width: 8px;
+            height: 6px;
+            align-self: center;
+            margin-right: 16px;
+        }
+        .activeNav p:hover {
+            cursor: pointer;
+            color: var(--Almost-Black);
+        }
+         .nav-right {
+            display: flex;
+        }
+        .nav-right p {
+            margin-right: 16px;
+        }
+        .nav-right p:nth-child(1) {
+            margin-right: 40px;
+            margin-block: auto;
+        }
+        .nav-right p:nth-child(2) {
+            border-radius: 16px;
+            margin-block: auto;
+            padding: 15px;
+            border: 1px solid var(--Medium-Gray);
+        }
+        .nav-right p:hover {
+            cursor: pointer;
+            color: var(--Almost-Black);
+        }
+        .nav-right p:last-child:hover {
+            border: 1px solid var(--Almost-Black);
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation-zone">
+        <nav class="nav-left">
+            <img src="./images/logo.svg" alt="logo">
+            <div class="activeNav">
+                <p>Features</p>
+                <img src="./images/icon-arrow-down.svg" alt="ArrowDown">
+                <p>Company</p>
+                <img src="./images/icon-arrow-down.svg" alt="ArrowDown">
+            </div>
+            <p>Careers</p>
+            <p>About</p>
+        </nav>
+        <nav class="nav-right">
+            <p>Login</p>
+            <p>Register</p>
+        </nav>
+    </div>
+</body>
+</html>

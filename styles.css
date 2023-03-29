@@ -1,0 +1,245 @@
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --Font-size-paragraph: 18px;
+    --Font-Family: 'Epilogue', sans-serif;
+    --Font-Weight1: 500;
+    --Font-Weight2: 700;
+}
+body {
+    font-family: var(--Font-Family);
+}
+
+
+.inactive {
+    display: none;
+}
+
+.navigation-zone {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    margin: 4px 20px 0 20px;
+    font-size: smaller;
+    color: var(--Medium-Gray);
+}
+.nav-left {
+    display: flex;
+}
+.nav-left > img {
+    height: 22px;
+    width: 64px;
+    align-self: center;
+    margin-right: 52px;
+}
+.nav-left > p {
+    margin-right: 16px;
+}
+.nav-left p:hover {
+    cursor: pointer;
+}
+.nav-left p:last-child:hover {
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+.activeNav {
+    display: flex;
+    justify-content: space-between;
+}
+.activeNav p {
+    margin-right: 6px;
+}
+.activeNav img {
+    width: 8px;
+    height: 6px;
+    align-self: center;
+    margin-right: 16px;
+}
+.activeNav p:hover {
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+.activeNav img:hover {
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+ .nav-right {
+    display: flex;
+    margin-right: 40px;
+}
+.nav-right p {
+    margin-right: 16px;
+}
+.nav-right p:nth-child(1) {
+    margin-right: 40px;
+    margin-block: auto;
+}
+.nav-right p:nth-child(2) {
+    border-radius: 16px;
+    margin-block: auto;
+    padding: 15px;
+    border: 1px solid var(--Medium-Gray);
+}
+.nav-right p:hover {
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+.nav-right p:last-child:hover {
+    border: 1px solid var(--Almost-Black);
+}
+
+
+.ContainerPP {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 1100px;
+    height: 550px;
+    justify-self: center;
+    margin-left: 100px;
+}
+.LeftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.title {
+    font-size: 65px;
+    font-weight: var(--Font-Weight2);
+    align-self: flex-start;
+    margin-top: 95px;
+}
+.text {
+    font-size: medium;
+    font-weight: var(--Font-Weight1);
+    color: var(--Medium-Gray);
+    margin-bottom: 0;
+    align-self: flex-start;
+    text-indent: 5em hanging each-line;
+    margin-top: 48px;
+}
+.button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;    
+    font-size: large;
+    align-self: flex-start;
+    color: var(--Almost-White);
+    background: var(--Almost-Black);
+    margin-top: 48px;
+    margin-bottom: 85px;
+    font-weight: var(--Font-Weight2);
+}
+.button:hover {
+    cursor: pointer;
+    color: var(--Almost-Black);
+    background: var(--Almost-White);
+    border: 1px solid var(--Almost-Black);
+}
+.images {
+    width: 100%;
+}
+.hero {
+    width: 450px;
+    height: 100%;
+}
+
+.container {
+    flex-direction: column;
+    padding: 20px;
+    width: 100px;
+    border-radius: 8px;
+    border: 1px solid var(--Almost-Black);
+    position: absolute;
+    top: 60px;
+    left: 76px;
+}
+.todo {
+    display: flex;
+    margin: 0 0 16px 0;
+}
+.todo img{
+    width: 14px;
+    height: 14px;
+    align-self: center;
+    margin-right: 12px;
+}
+.todo p{
+    font-size: 14px;
+    font-weight: var(--Font-Weight1);
+    color: var(--Medium-Gray); 
+    margin-block: auto;
+}
+.calendar {
+    display: flex;
+    margin: 0 0 16px 0;
+}
+.calendar img {
+    width: 14px;
+    height: 14px;
+    align-self: center;
+    margin-right: 12px;
+}
+.calendar p {
+    font-size: 14px;
+    font-weight: var(--Font-Weight1);
+    color: var(--Medium-Gray); 
+    margin-block: auto;
+}
+.reminders {
+    display: flex;
+    margin: 0 0 16px 0;
+}
+.reminders img {
+    width: 14px;
+    height: 14px;
+    align-self: center;
+    margin-right: 12px;
+}
+.reminders p {
+    font-size: 14px;
+    font-weight: var(--Font-Weight1);
+    color: var(--Medium-Gray); 
+    margin-block: auto;
+}
+.planning {
+    display: flex;
+    margin: 0 0 0 0;
+}
+.planning img {
+    width: 14px;
+    height: 14px;
+    align-self: center;
+    margin-right: 12px;
+}
+.planning p {
+    font-size: 14px;
+    font-weight: var(--Font-Weight1);
+    color: var(--Medium-Gray);  
+    margin-block: auto;
+}
+
+.company {
+    flex-direction: column;
+    padding: 20px;
+    width: 62px;
+    border: 1px solid var(--Almost-Black);
+    position: absolute;
+    top: 60px;
+    left: 234px;
+    border-radius: 8px;
+}
+.company p {
+    margin: 0 0 16px 0;  
+}
+.company p:last-child {
+    margin: 0 0 0 0;  
+}

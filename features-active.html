@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+    <title>Features Active</title>
+
+    <style>
+        :root {
+            --Almost-White: hsl(0, 0%, 98%);
+            --Medium-Gray: hsl(0, 0%, 41%);
+            --Almost-Black: hsl(0, 0%, 8%);
+            --Font-size-paragraph: 18px;
+            --Font-Family: 'Epilogue', sans-serif;
+            --Font-Weight1: 500;
+            --Font-Weight2: 700;
+        }
+        body {
+            font-family: var(--Font-Family);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            width: 120px;
+            border-radius: 5px;
+        }
+        .todo {
+            display: flex;
+        }
+        .todo img{
+            width: 14px;
+            height: 14px;
+            align-self: center;
+            margin-right: 12px;
+        }
+        .todo p{
+            font-size: 14px;
+            font-weight: var(--Font-Weight1);
+            color: var(--Medium-Gray);
+        }
+        .calendar {
+            display: flex;
+        }
+        .calendar img {
+            width: 14px;
+            height: 14px;
+            align-self: center;
+            margin-right: 12px;
+        }
+        .calendar p {
+            font-size: 14px;
+            font-weight: var(--Font-Weight1);
+            color: var(--Medium-Gray);
+        }
+        .reminders {
+            display: flex;
+        }
+        .reminders img {
+            width: 14px;
+            height: 14px;
+            align-self: center;
+            margin-right: 12px;
+        }
+        .reminders p {
+            font-size: 14px;
+            font-weight: var(--Font-Weight1);
+            color: var(--Medium-Gray);
+        }
+        .planning {
+            display: flex;
+        }
+        .planning img {
+            width: 14px;
+            height: 14px;
+            align-self: center;
+            margin-right: 12px;
+        }
+        .planning p {
+            font-size: 14px;
+            font-weight: var(--Font-Weight1);
+            color: var(--Medium-Gray);  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="todo">
+            <img src="./images/icon-todo.svg" alt="icon-todo" class="icon-todo">
+            <p class="Todo">Todo list</p>
+        </div>
+        <div class="calendar">
+            <img src="./images/icon-calendar.svg" alt="icon-calendar" class="icon-calendar">
+            <p class="Calendar">Calendar</p>
+        </div>
+        <div class="reminders">
+            <img src="./images/icon-reminders.svg" alt="icon-reminders" class="icon-reminders">
+            <p class="Reminders">Reminders</p>
+        </div>
+        <div class="planning">
+            <img src="./images/icon-planning.svg" alt="icon-planning" class="icon-planning">
+            <p class="Planning">Planning</p>
+        </div>
+    </div>
+</body>
+</html>

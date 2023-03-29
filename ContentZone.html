@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+    <title>ContentZone</title>
+
+    <style>
+        :root {
+            --Almost-White: hsl(0, 0%, 98%);
+            --Medium-Gray: hsl(0, 0%, 41%);
+            --Almost-Black: hsl(0, 0%, 8%);
+            --Font-size-paragraph: 18px;
+            --Font-Family: 'Epilogue', sans-serif;
+            --Font-Weight1: 500;
+            --Font-Weight2: 700;
+        }
+        body {
+            font-family: var(--Font-Family);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .ContainerPP {
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            width: 1100px;
+            height: 550px;
+            justify-self: center;
+        }
+        .LeftContainer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            margin-left: 100px;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+        .title {
+            font-size: 65px;
+            font-weight: var(--Font-Weight2);
+            align-self: flex-start;
+            margin-top: 95px;
+        }
+        .text {
+            font-size: medium;
+            font-weight: var(--Font-Weight1);
+            color: var(--Medium-Gray);
+            margin-bottom: 0;
+            align-self: flex-start;
+            text-indent: 5em hanging each-line;
+            margin-top: 48px;
+        }
+        .button {
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            border: none;    
+            font-size: large;
+            align-self: flex-start;
+            color: var(--Almost-White);
+            background: var(--Almost-Black);
+            margin-top: 48px;
+            margin-bottom: 85px;
+            font-weight: var(--Font-Weight2);
+        }
+        .button:hover {
+            cursor: pointer;
+            color: var(--Almost-Black);
+            background: var(--Almost-White);
+            border: 1px solid var(--Almost-Black);
+        }
+        .images {
+            width: 100%;
+        }
+        .hero {
+            width: 450px;
+            height: 100%;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ContainerPP">
+        <nav class="LeftContainer">
+            <span class="title">Make <br> Remote Work</span>
+            <p class="text">
+                Get your team in sync, no matter your location. <br>
+                Streamline processes, create team rituals, and  <br> watch productivity soar.
+            </p>
+            <button class="button">Learn More</button>
+            <div class="images">
+                <img src="./images/client-databiz.svg" alt="databiz" class="databiz">
+                <img src="./images/client-audiophile.svg" alt="audiophile" class="audiophile">
+                <img src="./images/client-meet.svg" alt="meet" class="meet">
+                <img src="./images/client-maker.svg" alt="maker" class="maker">
+            </div>
+        </nav>
+        <img src="./images/image-hero-desktop.png" alt="hero" class="hero">
+    </div>
+</body>
+</html>
